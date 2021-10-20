@@ -100,13 +100,14 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 89.13%; 
   margin: 0 auto;
 }
+
+* { box-sizing: border-box; }
 /*=================================
   Header styling starts here
-=================================*/
-
+=================================*
 
 
 
@@ -119,13 +120,159 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.userinfo-container .wrapper {
+  padding-bottom: 30px;
+  border: 3px solid #A7A7A7;
+}
+.fname-container label,
+.lname-container label,
+.gender-container label,
+.address-container label {
+  font-size: 26px;
+  text-transform: capitalize;
+}
+
+form {
+  width: 79.45%;
+  margin: auto;
+  border: 3px solid #A7A7A7;
+}
+
+form div {
+  width: 74.90%;
+  margin: 40px auto 0;
+}
+
+.fname-container label,
+.lname-container label {
+  margin-right: 11%;
+  vertical-align: middle;
+}
+
+.fname-container input,
+.lname-container input {
+  width: 70%;
+  padding: 11px 0;
+  border: 3px solid #A7A7A7;
+}
+
+.gender-container > :first-child { margin-right: 15%; }
+
+.gender-container input {
+  width: 5%;
+  height: 37px;
+}
+
+.gender-container > label:nth-child(3),label:nth-child(5) { vertical-align: text-bottom; }
+
+.gender-container > label:nth-child(3) { margin-right: 8%; }
+
+.address-container label {
+  margin-right: 15%;
+  vertical-align: middle;
+}
+
+textarea {
+  width: 70%;
+  border: 3px solid #A7A7A7;
+}
+
+.check label { font-size: 28px; }
+
+.check .tc {
+  margin-right: 2.7%;
+  transform: scale(3.3);
+}
+
+button {
+  padding: 8px 49px;
+  border: 3px solid #A7A7A7;
+  background-color: #FFF;
+  font-size: 28px;
+  transition: background-color 550ms ease; /*changes */
+}
+
+.buttons {
+  padding-bottom: 39px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons > :first-child { margin-right: 2.8%; }
+/*=================================== ullitablestyling start here================================= */
+
+input,
+textarea { font-size: 27px; }
+.buttons button:hover { background-color: #BDBEC0; }
+
+.out {
+  width: 95.49%;
+  margin: 35px auto 0;
+}
+
+.out > li {
+  border-right: 3px solid #000;
+  border-bottom: 3px solid #000;
+  display: block;
+}
+
+.out > :first-child { border-top: 3px solid; }
+
+.out > :first-child li {
+  font-size: 28px;
+  font-weight: 600;
+}
 
 
+.inner li {
+  width: 16.12%;
+  padding: 17px 0;
+  border-left: 3px solid;
+  vertical-align: middle;
+  font-size: 27px;
+  text-align: center;
+  text-transform: capitalize;
+}
 
+.inner li a {
+  padding: 3px 59px;
+  border: 2px solid #000;
+  background-color: #BDBEC0;
+  color: #000;
+  font-size: 22px;
+  transition: background-color 550ms ease-in, color 550ms ease-in;
+}
 
+.inner li a:hover {
+  background-color: #059862;
+  color: #FFF;
+}
 
+form div { position: relative; }
 
+.firstname-err,
+.lastname-err,
+.gender-err,
+.address-err,
+.check-err {
+  position: absolute;
+  left: 28.3%;
+  color: red;
+  font-size: 19px;
+}
 
+.firstname-err,
+.lastname-err { bottom: -25px; }
+.address-err { bottom:-14px; }
+.gender-err {
+  top: 44px;
+  left: 28%;
+}
+
+.check-err {
+  top: 41px;
+  left: 5%;
+}
 
 /*=================================
   main styling ends here
@@ -134,11 +281,6 @@ li {
 /*=================================
   footer styling starts here
 =================================*/ 
-
-
-
-
-
 
 
  /*=================================
